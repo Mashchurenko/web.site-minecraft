@@ -1,0 +1,452 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Хроники Кубического Света</title>
+    <meta name="description" content="Официальный сайт игры Хроники Кубического Света — приключение молодого героя через пустыню, горы, лес и Эндер-мир.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--
+        Основной контейнер страницы.
+        Класс no-js можно использовать при желании для альтернативных сценариев,
+        но здесь он оставлен как пример расширяемой архитектуры.
+    -->
+    <div class="page-shell">
+
+        <!-- ========================= -->
+        <!-- ШАПКА / НАВИГАЦИЯ         -->
+        <!-- ========================= -->
+        <header class="site-header" id="top">
+            <div class="container header-container">
+                <a href="#hero" class="site-logo" aria-label="Перейти к началу страницы">
+                    <span class="logo-mark"></span>
+                    <span class="logo-text">Хроники Кубического Света</span>
+                </a>
+
+                <!-- Кнопка мобильного меню -->
+                <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="siteNav">
+                    <span class="menu-toggle-line"></span>
+                    <span class="menu-toggle-line"></span>
+                    <span class="menu-toggle-line"></span>
+                </button>
+
+                <!-- Основная навигация -->
+                <nav class="site-nav" id="siteNav">
+                    <ul class="nav-list">
+                        <li><a href="#about" class="nav-link">О игре</a></li>
+                        <li><a href="#worlds" class="nav-link">Миры</a></li>
+                        <li><a href="#hero-artifacts" class="nav-link">Герой</a></li>
+                        <li><a href="#enemies" class="nav-link">Враги</a></li>
+                        <li><a href="#gallery" class="nav-link">Галерея</a></li>
+                        <li><a href="#cta" class="nav-link">Финал</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <!-- ========================= -->
+            <!-- HERO-БЛОК                 -->
+            <!-- ========================= -->
+            <section class="hero-section" id="hero">
+                <div class="container hero-grid">
+                    <div class="hero-content reveal">
+                        <p class="section-eyebrow">Кубическое фэнтези-приключение</p>
+                        <h1 class="hero-title">Хроники Кубического Света</h1>
+                        <p class="hero-text">
+                            Молодой Стив отправляется в опасное путешествие через пустыню, горы, лес и Эндер-мир.
+                            Вооружённый мечом и луком древнего хранителя, он должен собрать артефакты света
+                            и сразиться с Тёмным Лордом, чтобы спасти миры от надвигающейся тьмы.
+                        </p>
+
+                        <div class="hero-actions">
+                            <a href="#about" class="button button-primary">Начать приключение</a>
+                            <a href="#gallery" class="button button-secondary">Смотреть миры</a>
+                        </div>
+
+                        <ul class="hero-stats">
+                            <li class="hero-stat">
+                                <strong>4</strong>
+                                <span>уникальных мира</span>
+                            </li>
+                            <li class="hero-stat">
+                                <strong>3</strong>
+                                <span>древних артефакта</span>
+                            </li>
+                            <li class="hero-stat">
+                                <strong>1</strong>
+                                <span>финальная битва</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="hero-visual reveal reveal-delay-1">
+                        <!--
+                            ЗАМЕНА ИЗОБРАЖЕНИЯ:
+                            Поменяйте src на путь к вашей картинке.
+                            Рекомендуемый размер: 1200x900 px или больше.
+                        -->
+                        <img
+                            src="https://i.postimg.cc/vTjRCXdG/Stev-v-adu-srazenie-s-ognem.png"
+                            alt="Главный герой с мечом и луком"
+                            class="hero-image"
+                        >
+                        <div class="image-fallback-label">Ваш арт героя / ключевой постер</div>
+
+                        <!-- Декоративные слои -->
+                        <div class="hero-glow hero-glow-gold"></div>
+                        <div class="hero-glow hero-glow-purple"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========================= -->
+            <!-- О ИГРЕ                    -->
+            <!-- ========================= -->
+            <section class="content-section" id="about">
+                <div class="container">
+                    <div class="section-heading reveal">
+                        <p class="section-eyebrow">История</p>
+                        <h2 class="section-title">О игре</h2>
+                        <p class="section-description">
+                            Это приключение о юном герое, которому суждено пройти через четыре мира,
+                            раскрыть тайну древнего хранителя и остановить силы тьмы.
+                        </p>
+                    </div>
+
+                    <div class="about-grid">
+                        <article class="info-card reveal">
+                            <h3>Молодой Стив</h3>
+                            <p>
+                                Юный путешественник, ещё не ставший легендой, но уже готовый бросить вызов
+                                опаснейшим созданиям. Его путь начинается в мире, где свет гаснет, а надежда
+                                держится на смелости одного героя.
+                            </p>
+                        </article>
+
+                        <article class="info-card reveal reveal-delay-1">
+                            <h3>Дар древнего хранителя</h3>
+                            <p>
+                                Перед исчезновением хранитель передал герою меч и лук — оружие,
+                                способное пробуждать силу древних рун. Только владелец чистого сердца
+                                может использовать их в полную силу.
+                            </p>
+                        </article>
+
+                        <article class="info-card reveal reveal-delay-2">
+                            <h3>Главная цель</h3>
+                            <p>
+                                Собрать артефакты из четырёх миров, открыть путь к сердцу Эндер-мрака
+                                и победить Тёмного Лорда, пока тьма не поглотила весь кубический мир.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========================= -->
+            <!-- МИРЫ ИГРЫ                 -->
+            <!-- ========================= -->
+            <section class="content-section worlds-section" id="worlds">
+                <div class="container">
+                    <div class="section-heading reveal">
+                        <p class="section-eyebrow">Путешествие</p>
+                        <h2 class="section-title">Миры игры</h2>
+                        <p class="section-description">
+                            Каждый мир имеет собственную атмосферу, опасности, артефакты и визуальный характер.
+                        </p>
+                    </div>
+
+                    <div class="worlds-grid">
+                        <article class="world-card world-desert reveal">
+                            <div class="world-image-wrap">
+                                <!--
+                                    ЗАМЕНА ИЗОБРАЖЕНИЯ:
+                                    Укажите свой файл для мира Пустыни.
+                                    Рекомендуемый размер: 900x700 px.
+                                -->
+                                <img src="https://i.postimg.cc/PJvVvjBq/Pustyna-s-drevnimi-ruinami.png" alt="Пустынный мир" class="world-image">
+                                <span class="world-image-label">Изображение мира: Пустыня</span>
+                            </div>
+                            <div class="world-card-content">
+                                <h3>Пустыня</h3>
+                                <p>
+                                    Жаркие дюны, руины забытых храмов и песчаные чудовища.
+                                    Здесь герой находит первую реликвию и узнаёт, что тьма уже пробудилась.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="world-card world-mountains reveal reveal-delay-1">
+                            <div class="world-image-wrap">
+                                <!--
+                                    ЗАМЕНА ИЗОБРАЖЕНИЯ:
+                                    Укажите свой файл для мира Гор.
+                                    Рекомендуемый размер: 900x700 px.
+                                -->
+                                <img src="https://i.postimg.cc/MKjgv7Sf/Zimnij-pejzaz-v-kubiceskom-mire.png" alt="Горный мир" class="world-image">
+                                <span class="world-image-label">Изображение мира: Горы</span>
+                            </div>
+                            <div class="world-card-content">
+                                <h3>Горы</h3>
+                                <p>
+                                    Ледяные вершины, обрывы и древние крепости в облаках.
+                                    Здесь героя ждут испытания высотой, выносливостью и битвы с каменными стражами.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="world-card world-forest reveal reveal-delay-2">
+                            <div class="world-image-wrap">
+                                <!--
+                                    ЗАМЕНА ИЗОБРАЖЕНИЯ:
+                                    Укажите свой файл для мира Леса.
+                                    Рекомендуемый размер: 900x700 px.
+                                -->
+                                <img src="https://i.postimg.cc/Hk3GgpHT/Lesnoj-put'-cerez-most-i-vodopad.png" alt="Лесной мир" class="world-image">
+                                <span class="world-image-label">Изображение мира: Лес</span>
+                            </div>
+                            <div class="world-card-content">
+                                <h3>Лес</h3>
+                                <p>
+                                    Живой зелёный мир, полный скрытых троп, магических деревьев и охотящихся в тени монстров.
+                                    Здесь пробуждается настоящая сила лука хранителя.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="world-card world-ender reveal">
+                            <div class="world-image-wrap">
+                                <!--
+                                    ЗАМЕНА ИЗОБРАЖЕНИЯ:
+                                    Укажите свой файл для Эндер-мира.
+                                    Рекомендуемый размер: 900x700 px.
+                                -->
+                                <img src="https://i.postimg.cc/T2bZPjGw/Temnyj-drakon-s-fioletovymi-glazami.png" alt="Эндер-мир" class="world-image">
+                                <span class="world-image-label">Изображение мира: Эндер-мир</span>
+                            </div>
+                            <div class="world-card-content">
+                                <h3>Эндер-мир</h3>
+                                <p>
+                                    Искривлённая реальность, летающие острова, фиолетовый туман и крепость Тёмного Лорда.
+                                    Здесь заканчивается путь героя и начинается финальная битва за судьбу всех миров.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========================= -->
+            <!-- ГЕРОЙ И АРТЕФАКТЫ         -->
+            <!-- ========================= -->
+            <section class="content-section" id="hero-artifacts">
+                <div class="container">
+                    <div class="section-heading reveal">
+                        <p class="section-eyebrow">Сила света</p>
+                        <h2 class="section-title">Герой и артефакты</h2>
+                        <p class="section-description">
+                            Оружие хранителя и древние реликвии — ключ к победе над тьмой.
+                        </p>
+                    </div>
+
+                    <div class="features-grid">
+                        <article class="feature-card reveal">
+                            <div class="feature-icon">⚔</div>
+                            <h3>Меч хранителя</h3>
+                            <p>
+                                Клинок, выкованный из светящегося кубического металла.
+                                Усиливается по мере прохождения миров и особенно эффективен против элитных врагов.
+                            </p>
+                        </article>
+
+                        <article class="feature-card reveal reveal-delay-1">
+                            <div class="feature-icon">🏹</div>
+                            <h3>Лук древних</h3>
+                            <p>
+                                Магический лук, чьи стрелы пробуждают скрытые руны.
+                                Идеален для дальнего боя, скрытых атак и охоты на летающих монстров.
+                            </p>
+                        </article>
+
+                        <article class="feature-card reveal reveal-delay-2">
+                            <div class="feature-icon">◈</div>
+                            <h3>Артефакты света</h3>
+                            <p>
+                                Реликвии, спрятанные в четырёх мирах. Только собрав их вместе,
+                                герой сможет открыть путь к сердцу мрака и ослабить Тёмного Лорда.
+                            </p>
+                        </article>
+
+                        <article class="feature-card reveal">
+                            <div class="feature-icon">✦</div>
+                            <h3>Путь легенды</h3>
+                            <p>
+                                С каждым пройденным миром Стив становится сильнее,
+                                открывает новые возможности и приближается к своей истинной судьбе.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========================= -->
+            <!-- ВРАГИ И БОСС              -->
+            <!-- ========================= -->
+            <section class="content-section enemies-section" id="enemies">
+                <div class="container">
+                    <div class="section-heading reveal">
+                        <p class="section-eyebrow">Опасность</p>
+                        <h2 class="section-title">Враги и финальный босс</h2>
+                        <p class="section-description">
+                            На пути героя стоят чудовища каждого мира, но всех их объединяет воля Тёмного дракона.
+                        </p>
+                    </div>
+
+                    <div class="enemies-layout">
+                        <div class="enemy-list reveal">
+                            <article class="enemy-card">
+                                <h3>Песчаные охотники</h3>
+                                <p>Быстрые противники пустыни, скрывающиеся под барханами и нападающие внезапно.</p>
+                            </article>
+
+                            <article class="enemy-card">
+                                <h3>Каменные стражи</h3>
+                                <p>Массивные защитники горных руин, выдерживающие прямые удары и атакующие с огромной силой.</p>
+                            </article>
+
+                            <article class="enemy-card">
+                                <h3>Лесные хищники тени</h3>
+                                <p>Опасные создания, появляющиеся между деревьями и не дающие покоя даже ночью.</p>
+                            </article>
+
+                            <article class="enemy-card">
+                                <h3>Эндер-существа</h3>
+                                <p>Искажённые обитатели последнего мира, способные перемещаться сквозь пространство.</p>
+                            </article>
+                        </div>
+
+                        <aside class="boss-card reveal reveal-delay-1">
+                            <p class="boss-label">Главная угроза</p>
+                            <h3>Тёмный Дракон</h3>
+                            <p class="boss-text">
+                                Повелитель Эндер-мрака, подчинивший себе монстров всех миров.
+                                Он питается силой древних разломов и ждёт героя в сердце фиолетовой крепости.
+                            </p>
+
+                            <!--
+                                ЗАМЕНА ИЗОБРАЖЕНИЯ:
+                                Укажите здесь свой арт босса.
+                                Рекомендуемый размер: 1000x1200 px.
+                            -->
+                            <img src="https://i.postimg.cc/PrRZFDp9/Ender-Drachen-im-Dunkeln-fliegend.png" alt="Тёмный дракон" class="boss-image">
+
+                            <ul class="boss-traits">
+                                <li>Финальная многоэтапная битва</li>
+                                <li>Темная магия и призыв существ</li>
+                                <li>Требует все найденные артефакты</li>
+                            </ul>
+                        </aside>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========================= -->
+            <!-- ГАЛЕРЕЯ                   -->
+            <!-- ========================= -->
+            <section class="content-section" id="gallery">
+                <div class="container">
+                    <div class="section-heading reveal">
+                        <p class="section-eyebrow">Скриншоты</p>
+                        <h2 class="section-title">Галерея игры</h2>
+                        <p class="section-description">
+                            Здесь можно показать локации, персонажей, бои и атмосферу каждого мира.
+                        </p>
+                    </div>
+
+                    <div class="gallery-grid">
+                        <figure class="gallery-card reveal">
+                            <!--
+                                ЗАМЕНА ИЗОБРАЖЕНИЯ:
+                                Вставьте свой скриншот или арт.
+                                Рекомендуемый размер: 1200x900 px.
+                            -->
+                            <img src="https://i.postimg.cc/4ywMTPk7/Issledovanie-drevnih-ruin-v-pustyne.png" alt="Скриншот игры 1" class="gallery-image">
+                            <figcaption>Исследование древних руин в пустыне</figcaption>
+                        </figure>
+
+                        <figure class="gallery-card reveal reveal-delay-1">
+                            <!--
+                                ЗАМЕНА ИЗОБРАЖЕНИЯ:
+                                Вставьте свой скриншот или арт.
+                                Рекомендуемый размер: 1200x900 px.
+                            -->
+                            <img src="https://i.postimg.cc/PJzHv1GL/Ledanaa-krepost'-na-versine-gor.png" alt="Скриншот игры 2" class="gallery-image">
+                            <figcaption>Подъём к ледяной крепости в горах</figcaption>
+                        </figure>
+
+                        <figure class="gallery-card reveal reveal-delay-2">
+                            <!--
+                                ЗАМЕНА ИЗОБРАЖЕНИЯ:
+                                Вставьте свой скриншот или арт.
+                                Рекомендуемый размер: 1200x900 px.
+                            -->
+                            <img src="https://i.postimg.cc/P5C7B162/Ohota-na-misticeskogo-olena.png" alt="Скриншот игры 3" class="gallery-image">
+                            <figcaption>Охота в магическом лесу</figcaption>
+                        </figure>
+
+                        <figure class="gallery-card reveal">
+                            <!--
+                                ЗАМЕНА ИЗОБРАЖЕНИЯ:
+                                Вставьте свой скриншот или арт.
+                                Рекомендуемый размер: 1200x900 px.
+                            -->
+                            <img src="https://i.postimg.cc/qgVt4ssV/Temnyj-zamok-pod-arkoj-burej.png" alt="Скриншот игры 4" class="gallery-image">
+                            <figcaption>Вход в крепость Тёмного Лорда</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========================= -->
+            <!-- ФИНАЛЬНЫЙ ПРИЗЫВ          -->
+            <!-- ========================= -->
+            <section class="cta-section" id="cta">
+                <div class="container cta-box reveal">
+                    <p class="section-eyebrow">Финал путешествия</p>
+                    <h2 class="cta-title">Свет четырёх миров ждёт своего героя</h2>
+                    <p class="cta-text">
+                        Пройди через руины, ледяные вершины, тёмные леса и искажённые земли Эндер-мира.
+                        Собери артефакты, раскрой тайну хранителя и приготовься к последней битве.
+                    </p>
+                    <a href="#hero" class="button button-primary">Вернуться к началу</a>
+                </div>
+            </section>
+        </main>
+
+        <!-- ========================= -->
+        <!-- ПОДВАЛ                    -->
+        <!-- ========================= -->
+        <footer class="site-footer">
+            <div class="container footer-container">
+                <div class="footer-brand">
+                    <h2>Хроники Кубического Света</h2>
+                    <p>Одностраничный промо-сайт приключенческой кубической игры.</p>
+                </div>
+
+                <div class="footer-links">
+                    <!--
+                        СЮДА МОЖНО ДОБАВИТЬ СВОИ ССЫЛКИ:
+                        Например: Steam, Telegram, VK, Discord, YouTube.
+                    -->
+                    <a href="#top">Наверх</a>
+                    <a href="#gallery">Галерея</a>
+                    <a href="#cta">Начать путь</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
